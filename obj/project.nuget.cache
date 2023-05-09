@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "fW9T/Y6gSB+oVrosygDIgMCdsPkzppnHUQT65kLGPDTXDwMYe5BuUSgBGjkn3LiH0xvkam4t7UVps+LVQaIvDw==",
+  "success": true,
+  "projectFilePath": "/home/dylan/Téléchargements/projets/dsrssr/dsrssr.csproj",
+  "expectedPackageFiles": [
+    "/home/dylan/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/gdksharp/3.24.24.95/gdksharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/dylan/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512"
+  ],
+  "logs": []
+}

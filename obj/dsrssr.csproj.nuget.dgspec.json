@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/dylan/Téléchargements/projets/dsrssr/dsrssr.csproj": {}
+  },
+  "projects": {
+    "/home/dylan/Téléchargements/projets/dsrssr/dsrssr.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dylan/Téléchargements/projets/dsrssr/dsrssr.csproj",
+        "projectName": "dsrssr",
+        "projectPath": "/home/dylan/Téléchargements/projets/dsrssr/dsrssr.csproj",
+        "packagesPath": "/home/dylan/.nuget/packages/",
+        "outputPath": "/home/dylan/Téléchargements/projets/dsrssr/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dylan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "GtkSharp": {
+              "target": "Package",
+              "version": "[3.24.24.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
