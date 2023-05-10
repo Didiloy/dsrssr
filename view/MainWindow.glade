@@ -94,7 +94,9 @@
                     <child>
                       <object class="GtkListBox" id="listBox">
                         <property name="visible">True</property>
+                        <property name="app_paintable">True</property>
                         <property name="can_focus">False</property>
+                        <property name="selection_mode">none</property>
                       </object>
                     </child>
                   </object>

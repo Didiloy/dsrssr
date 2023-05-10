@@ -5,22 +5,29 @@
   <object class="GtkBox" id="mainBox">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
+    <property name="margin_top">5</property>
+    <property name="margin_bottom">5</property>
     <property name="orientation">vertical</property>
     <child>
-      <object class="GtkBox">
+      <object class="GtkGrid">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
           <object class="GtkBox" id="bottomBox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
             <property name="orientation">vertical</property>
-            <property name="homogeneous">True</property>
             <child>
               <object class="GtkLabel" id="articleTitleLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="ypad">5</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="margin_left">5</property>
+                <property name="margin_bottom">10</property>
+                <property name="ypad">0</property>
                 <property name="label" translatable="yes">Titre article</property>
                 <property name="xalign">0.05000000074505806</property>
                 <attributes>
@@ -38,6 +45,8 @@
               <object class="GtkLabel" id="sourceNameLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">10</property>
                 <property name="label" translatable="yes">Nom de la source</property>
                 <property name="xalign">0.05000000074505806</property>
                 <attributes>
@@ -55,6 +64,8 @@
               <object class="GtkLabel" id="descriptionLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">10</property>
                 <property name="ypad">5</property>
                 <property name="label" translatable="yes">Description</property>
                 <property name="wrap">True</property>
@@ -68,9 +79,9 @@
             </child>
           </object>
           <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+            <property name="width">3</property>
           </packing>
         </child>
         <child>
@@ -80,22 +91,22 @@
             <property name="can_focus">True</property>
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
-            <property name="halign">center</property>
+            <property name="halign">end</property>
             <property name="valign">center</property>
+            <property name="margin_right">10</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
           </object>
           <packing>
-            <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="padding">10</property>
-            <property name="pack_type">end</property>
-            <property name="position">1</property>
+            <property name="left_attach">3</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
       </object>
       <packing>
         <property name="expand">True</property>
         <property name="fill">True</property>
-        <property name="position">1</property>
+        <property name="position">0</property>
       </packing>
     </child>
   </object>

@@ -1,9 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Cairo;
+using dsrssr.rss;
 using Gtk;
 using UI = Gtk.Builder.ObjectAttribute;
 
-namespace dsrssr
+namespace dsrssr.controller
 {
     class MainWindow : Window
     {
@@ -51,9 +55,37 @@ namespace dsrssr
             Console.WriteLine("Le bouton modifier un feed a été cliqué.");
         }
         
-        private void refresh_Clicked(object sender, EventArgs a)
+        private async void refresh_Clicked(object sender, EventArgs a)
         {
             Console.WriteLine("Le bouton refresh  a été cliqué.");
+            RssParser rssParser = new RssParser();
+            // List<RssArticle> rssArticles =  await rssParser.requestFeed("https://rci.fm/guadeloupe/fb/articles_rss_gp","dummy");
+            // List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.francetvinfo.fr/titres.rss","dummy");
+            List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.gamingonlinux.com/article_rss.php","dummy");
+            //remove all widget in listBox
+            foreach (Widget widget in listBox.Children)
+            {
+                listBox.Remove(widget);
+            }
+
+            for (var index = 0; index < rssArticles.Count; index++)
+            {
+                var ra = rssArticles[index];
+                ArticleCard ac = new ArticleCard();
+                ac.SetArticleTitle(ra.GetTitle());
+                ac.SetSourceName(ra.GetPublisher());
+                ac.SetDescription(ra.GetDescription());
+                ac.SetSeeArticleDetailAction(
+                    (sender1, e) =>
+                    {
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = ra.GetLink(),
+                            UseShellExecute = true
+                        });
+                    });
+                listBox.Insert(ac, index);
+            }
         }
     }
 }

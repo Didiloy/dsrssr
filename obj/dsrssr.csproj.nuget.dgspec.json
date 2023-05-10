@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "CodeKoenig.SyndicationToolbox": {
+              "target": "Package",
+              "version": "[5.0.2-beta, )"
+            },
             "GtkSharp": {
               "target": "Package",
               "version": "[3.24.24.*, )"
