@@ -10,8 +10,7 @@ namespace dsrssr
         [UI] private Button addNewFeedButton = null;
         [UI] private Button modifyFeedButton = null;
         [UI] private Button refreshButton = null;
-        [UI] private Box mainBox = null;
-        [UI] private FlowBox _flowBox = null;
+        [UI] private ListBox listBox = null;
         
         public MainWindow() : this(new Builder("MainWindow.glade")) { }
 
@@ -28,14 +27,12 @@ namespace dsrssr
 
         private void OnRealized(object sender, EventArgs e)
         {
-            Console.WriteLine("La fenêtre est prête.");
             var articleCard = new ArticleCard();
             for (int i = 0; i < 10; i++)
             {
-                _flowBox.Insert(new ArticleCard(),i);
+                listBox.Insert(new ArticleCard(),i);
                 
             }
-            Console.WriteLine("done");
         }
 
         private void Window_DeleteEvent(object sender, DeleteEventArgs a)
