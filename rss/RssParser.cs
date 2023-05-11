@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using CodeKoenig.SyndicationToolbox;
@@ -11,7 +12,6 @@ public class RssParser
 {
     public RssParser()
     {
-        
     }
 
     private async Task<List<RssArticle>> requestFeed(string url, string name)
@@ -32,7 +32,7 @@ public class RssParser
         }
         catch (Exception e)
         {
-            Logger.Instance.Log("RssParser : requestFeed => " +  e.ToString());
+            Logger.Instance.Log("RssParser : requestFeed => " + e.ToString());
         }
 
         return rssArticles;
@@ -42,15 +42,15 @@ public class RssParser
     {
         List<RssArticle> rssArticles = new List<RssArticle>();
         var feedsList = SubbedFeed.Instance.Feeds;
-        foreach (Feed feed in feedsList)
+        foreach (var feed in feedsList.Where(feed => feed.Actif))
         {
             List<RssArticle> lr = await requestFeed(feed.Link, feed.Name);
             rssArticles.AddRange(lr);
         }
+
         //sort the list by date in inverted order
         rssArticles.Sort((x, y) => DateTime.Compare(y.PubDate, x.PubDate));
-        
+
         return rssArticles;
     }
-  
 }

@@ -11,4 +11,9 @@
     <Link>https://www.gamingonlinux.com/article_rss.php</Link>
     <Actif>true</Actif>
   </Feed>
+  <Feed>
+    <Name>France TV Info</Name>
+    <Link>https://www.francetvinfo.fr/titres.rss</Link>
+    <Actif>true</Actif>
+  </Feed>
 </Feeds>

@@ -1,0 +1,1 @@
+11/05/2023 18:31:19 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
