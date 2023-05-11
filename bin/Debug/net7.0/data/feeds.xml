@@ -16,4 +16,19 @@
     <Link>https://www.francetvinfo.fr/titres.rss</Link>
     <Actif>true</Actif>
   </Feed>
+  <Feed>
+    <Name>France-Antilles - Internationnal</Name>
+    <Link>https://www.guadeloupe.franceantilles.fr/actualite/international/rss.xml</Link>
+    <Actif>true</Actif>
+  </Feed>
+  <Feed>
+    <Name>France-Antilles - France</Name>
+    <Link>https://www.guadeloupe.franceantilles.fr/actualite/france/rss.xml</Link>
+    <Actif>true</Actif>
+  </Feed>
+  <Feed>
+    <Name>Test ana de armas</Name>
+    <Link>https://rss.app/feeds/trqD7LU2UHONuymF.xml</Link>
+    <Actif>false</Actif>
+  </Feed>
 </Feeds>

@@ -14,7 +14,7 @@ namespace dsrssr
             //get current path
             var currentPath = System.IO.Directory.GetCurrentDirectory();
 
-            var app = new Application("org.dsrssr.dsrssr", GLib.ApplicationFlags.None);
+            var app = new Application("com.github.Didiloy.dsrssr", GLib.ApplicationFlags.None);
             app.Register(GLib.Cancellable.Current);
             var cssPath = currentPath + path.DirectorySeparatorChar + "ui"
                           + path.DirectorySeparatorChar + "adw-gtk3"

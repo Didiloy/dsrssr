@@ -116,4 +116,10 @@ public sealed class SubbedFeed
             Logger.Instance.Log("SubbedFeed : Load => " + e.ToString());
         }
     }
+
+    public void addNewFeed(Feed feed)
+    {
+        feeds.Add(feed);
+        SerializeAndSave();
+    }
 }

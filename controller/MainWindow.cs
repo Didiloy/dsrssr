@@ -30,13 +30,7 @@ namespace dsrssr.controller
 
         private void OnRealized(object sender, EventArgs e)
         {
-            var articleCard = new ArticleCard();
-            for (int i = 0; i < 10; i++)
-            {
-                listBox.Insert(new ArticleCard(),i);
-                
-            }
-
+            refresh_Clicked(sender, e);
         }
 
         private void Window_DeleteEvent(object sender, DeleteEventArgs a)
@@ -47,8 +41,9 @@ namespace dsrssr.controller
         private void addNewFeed_Clicked(object sender, EventArgs a)
         {
             Console.WriteLine("Le bouton ajouter un feed a été cliqué.");
-            var subbedFeed = SubbedFeed.Instance;
-            subbedFeed.SerializeAndSave();
+            var win = new AddRssFeed();
+            // StyleContext.AddProviderForScreen(Gdk.Screen.Default, cssProvider, 800); // couldn't find the equivalent to GTK_STYLE_PROVIDER_PRIORITY_USER so I set the priority to a random number
+            win.Show();
         }
         
         private void modifyFeed_Clicked(object sender, EventArgs a)
