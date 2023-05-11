@@ -29,11 +29,15 @@
                 <property name="margin_bottom">10</property>
                 <property name="ypad">0</property>
                 <property name="label" translatable="yes">Titre article</property>
+                <property name="wrap">True</property>
                 <property name="xalign">0.05000000074505806</property>
                 <attributes>
                   <attribute name="font-desc" value="Sans Bold 12"/>
                   <attribute name="weight" value="bold"/>
                 </attributes>
+                <style>
+                  <class name="title-2"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -48,11 +52,15 @@
                 <property name="halign">start</property>
                 <property name="margin_left">10</property>
                 <property name="label" translatable="yes">Nom de la source</property>
+                <property name="wrap">True</property>
                 <property name="xalign">0.05000000074505806</property>
                 <attributes>
                   <attribute name="font-desc" value="Sans Bold 11"/>
                   <attribute name="weight" value="medium"/>
                 </attributes>
+                <style>
+                  <class name="heading"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -70,6 +78,9 @@
                 <property name="label" translatable="yes">Description</property>
                 <property name="wrap">True</property>
                 <property name="xalign">0.05000000074505806</property>
+                <style>
+                  <class name="body"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -109,5 +120,8 @@
         <property name="position">0</property>
       </packing>
     </child>
+    <style>
+      <class name="card"/>
+    </style>
   </object>
 </interface>

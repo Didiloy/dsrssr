@@ -15,7 +15,6 @@ namespace dsrssr.controller
         [UI] private Button modifyFeedButton = null;
         [UI] private Button refreshButton = null;
         [UI] private ListBox listBox = null;
-        
         public MainWindow() : this(new Builder("MainWindow.glade")) { }
 
         private MainWindow(Builder builder) : base(builder.GetRawOwnedObject("MainWindow"))
@@ -37,6 +36,7 @@ namespace dsrssr.controller
                 listBox.Insert(new ArticleCard(),i);
                 
             }
+
         }
 
         private void Window_DeleteEvent(object sender, DeleteEventArgs a)
@@ -59,9 +59,10 @@ namespace dsrssr.controller
         {
             Console.WriteLine("Le bouton refresh  a été cliqué.");
             RssParser rssParser = new RssParser();
-            // List<RssArticle> rssArticles =  await rssParser.requestFeed("https://rci.fm/guadeloupe/fb/articles_rss_gp","dummy");
+            List<RssArticle> rssArticles =  await rssParser.requestFeed("https://rci.fm/guadeloupe/fb/articles_rss_gp","dummy");
             // List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.francetvinfo.fr/titres.rss","dummy");
-            List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.gamingonlinux.com/article_rss.php","dummy");
+            // List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.gamingonlinux.com/article_rss.php","dummy");
+            
             //remove all widget in listBox
             foreach (Widget widget in listBox.Children)
             {
@@ -84,6 +85,8 @@ namespace dsrssr.controller
                             UseShellExecute = true
                         });
                     });
+                ac.Hexpand = true;
+                ac.Vexpand = true;
                 listBox.Insert(ac, index);
             }
         }

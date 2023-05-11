@@ -16,6 +16,9 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-refresh</property>
+    <style>
+      <class name="suggested-action"/>
+    </style>
   </object>
   <object class="GtkApplicationWindow" id="MainWindow">
     <property name="can_focus">False</property>
@@ -38,6 +41,9 @@
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <property name="image">gtk-refresh</property>
+            <style>
+              <class name="suggested-action"/>
+            </style>
           </object>
           <packing>
             <property name="pack_type">end</property>
@@ -50,6 +56,9 @@
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <property name="image">gtk-add</property>
+            <style>
+              <class name="suggested-action"/>
+            </style>
           </object>
           <packing>
             <property name="pack_type">end</property>
@@ -63,6 +72,9 @@
             <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <property name="image">gtk-edit</property>
+            <style>
+              <class name="suggested-action"/>
+            </style>
           </object>
           <packing>
             <property name="pack_type">end</property>
@@ -80,27 +92,36 @@
           <object class="GtkGrid">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="double_buffered">False</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
               <object class="GtkScrolledWindow">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="shadow_type">in</property>
+                <property name="hscrollbar_policy">never</property>
                 <child>
                   <object class="GtkViewport">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="double_buffered">False</property>
                     <child>
                       <object class="GtkListBox" id="listBox">
                         <property name="visible">True</property>
                         <property name="app_paintable">True</property>
                         <property name="can_focus">False</property>
                         <property name="selection_mode">none</property>
+                        <style>
+                          <class name="boxed-list"/>
+                          <class name="card"/>
+                        </style>
                       </object>
                     </child>
                   </object>
                 </child>
+                <style>
+                  <class name="card"/>
+                </style>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -121,6 +142,9 @@
                   <attribute name="font-desc" value="Sans Bold 14"/>
                   <attribute name="weight" value="bold"/>
                 </attributes>
+                <style>
+                  <class name="title-1"/>
+                </style>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -191,7 +215,13 @@
             <property name="position">0</property>
           </packing>
         </child>
+        <style>
+          <class name="background"/>
+        </style>
       </object>
     </child>
+    <style>
+      <class name="background"/>
+    </style>
   </object>
 </interface>

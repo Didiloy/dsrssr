@@ -19,26 +19,25 @@ namespace dsrssr.controller
         {
             builder.Autoconnect(this);
         }
-        
+
         public void SetArticleTitle(string title)
         {
             articleTitleLabel.Text = title;
         }
-        
+
         public void SetSourceName(string sourceName)
         {
             sourceNameLabel.Text = sourceName;
         }
-        
+
         public void SetDescription(string description)
         {
             descriptionLabel.Text = description;
         }
-        
+
         public void SetSeeArticleDetailAction(EventHandler action)
         {
             seeArticleDetail.Clicked += action;
         }
-
     }
 }
