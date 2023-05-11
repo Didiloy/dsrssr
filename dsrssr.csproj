@@ -24,5 +24,8 @@
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
     <None Update="ui\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <None Update="data\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
 </Project>

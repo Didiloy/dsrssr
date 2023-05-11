@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Subbed feeds-->
+<Feeds>
+  <Feed>
+    <Name>Feed1</Name>
+    <Link>https://www.lemonde.fr/rss/une.xml</Link>
+    <Actif>true</Actif>
+  </Feed>
+  <Feed>
+    <Name>Feed2</Name>
+    <Link>https://www.lemonde.fr/rss/une.xml</Link>
+    <Actif>false</Actif>
+  </Feed>
+  <Feed>
+    <Name>Dummy</Name>
+    <Link>https://www.reddit.com/.rss</Link>
+    <Actif>true</Actif>
+  </Feed>
+  <Feed>
+    <Name>Dummy</Name>
+    <Link>https://www.reddit.com/.rss</Link>
+    <Actif>true</Actif>
+  </Feed>
+</Feeds>

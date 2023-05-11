@@ -20,7 +20,7 @@ public class RssParser
         Console.WriteLine("Code de réponse: " + response.StatusCode);
         string rssString = await response.Content.ReadAsStringAsync();
         FeedParser feedParser = FeedParser.Create(rssString);
-        Feed feed = feedParser.Parse();
+        CodeKoenig.SyndicationToolbox.Feed feed = feedParser.Parse();
         List<RssArticle> rssArticles = new List<RssArticle>();
         foreach (FeedArticle feedArticle in feed.Articles)
         {

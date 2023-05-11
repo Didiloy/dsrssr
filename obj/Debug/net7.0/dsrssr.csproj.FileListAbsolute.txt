@@ -81,3 +81,4 @@
 /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/ui/adw-gtk3/gtk-4.0/gtk-dark.css
 /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/ui/adw-gtk3/gtk-4.0/gtk.css
 /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/ui/adw-gtk3/index.theme
+/home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
