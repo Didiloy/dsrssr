@@ -37,3 +37,9 @@
 11/05/2023 22:43:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
 11/05/2023 22:43:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
 11/05/2023 22:43:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:37 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:56 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:57 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+11/05/2023 22:52:58 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
