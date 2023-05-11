@@ -122,4 +122,10 @@ public sealed class SubbedFeed
         feeds.Add(feed);
         SerializeAndSave();
     }
+    
+    public void removeFeed(Feed feed)
+    {
+        feeds.Remove(feed);
+        SerializeAndSave();
+    }
 }

@@ -40,15 +40,14 @@ namespace dsrssr.controller
 
         private void addNewFeed_Clicked(object sender, EventArgs a)
         {
-            Console.WriteLine("Le bouton ajouter un feed a été cliqué.");
             var win = new AddRssFeed();
-            // StyleContext.AddProviderForScreen(Gdk.Screen.Default, cssProvider, 800); // couldn't find the equivalent to GTK_STYLE_PROVIDER_PRIORITY_USER so I set the priority to a random number
             win.Show();
         }
         
         private void modifyFeed_Clicked(object sender, EventArgs a)
         {
-            Console.WriteLine("Le bouton modifier un feed a été cliqué.");
+            var win = new ListAllFeeds();
+            win.Show();
         }
         
         private async void refresh_Clicked(object sender, EventArgs a)
