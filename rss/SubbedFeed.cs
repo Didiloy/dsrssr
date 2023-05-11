@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Xml.Linq;
+using dsrssr.common;
 using path = System.IO.Path;
 
 
@@ -10,6 +11,7 @@ public sealed class SubbedFeed
 {
     //implement the singleton pattern
     private static SubbedFeed instance = null;
+
     public static SubbedFeed Instance
     {
         get
@@ -18,18 +20,22 @@ public sealed class SubbedFeed
             {
                 instance = new SubbedFeed();
             }
+
             return instance;
         }
     }
+
     private List<Feed> feeds = new List<Feed>();
     private static readonly string CurrentPath = System.IO.Directory.GetCurrentDirectory();
-    private static readonly string SavePath = CurrentPath + path.DirectorySeparatorChar + "data" + path.DirectorySeparatorChar + "feeds.xml"; 
+
+    private static readonly string SavePath =
+        CurrentPath + path.DirectorySeparatorChar + "data" + path.DirectorySeparatorChar + "feeds.xml";
 
     private SubbedFeed()
     {
-            Load();
+        Load();
     }
-    
+
     public void SerializeAndSave()
     {
         //Create a XElement foreach feed in the feeds list
@@ -44,38 +50,65 @@ public sealed class SubbedFeed
                 )
             );
         }
-        
+
         //Create the XDocument with the XElement list
         XDocument objXDoc = new XDocument(
             new XComment("Subbed feeds"),
             new XElement("Feeds", feedElements)
         );
-        
+
 
         objXDoc.Declaration = new XDeclaration("1.0", "utf-8", "true");
-        objXDoc.Save(SavePath);
-        Console.WriteLine("Saved to " + SavePath);
+        try
+        {
+            objXDoc.Save(SavePath);
+            Logger.Instance.Log("SubbedFeed : SerializeAndSave => Saved to " + SavePath);
+        }
+        catch (Exception e)
+        {
+            Logger.Instance.Log("SubbedFeed : SerializeAndSave => Impossible to save file: " + e.ToString());
+        }
+        
     }
-    
-    
+
+
     public void Load()
     {
-        //Load the xml file with XDocument
-        XDocument doc = XDocument.Load(SavePath);
-        //Get the root element of the xml file
-        XElement root = doc.Root;
-        //Get all the feed elements
-        IEnumerable<XElement> feeds = root.Elements("Feed");
-
-        foreach (XElement feed in feeds)
+        //if the savePath file doesn't exist, create it 
+        if (!System.IO.File.Exists(SavePath))
         {
-            string name = feed.Element("Name").Value;
-            string link = feed.Element("Link").Value;
-            bool actif = bool.Parse(feed.Element("Actif").Value);
-            
-            //Create a new feed object
-            Feed newFeed = new Feed(name, link, actif);
-            this.feeds.Add(newFeed);
+            Logger.Instance.Log("SubbedFeed : Load => feeds.xml doesn't exist, creating it");
+            System.IO.File.Create(SavePath).Dispose();
+            //add the standard xml declaration
+            XDocument objXDoc = new XDocument(
+                new XComment("Subbed feeds"),
+                new XElement("Feeds")
+            );
+            objXDoc.Save(SavePath);
+        }
+        try
+        {
+            //Load the xml file with XDocument
+            XDocument doc = XDocument.Load(SavePath);
+            //Get the root element of the xml file
+            XElement root = doc.Root;
+            //Get all the feed elements
+            IEnumerable<XElement> feeds = root.Elements("Feed");
+
+            foreach (XElement feed in feeds)
+            {
+                string name = feed.Element("Name").Value;
+                string link = feed.Element("Link").Value;
+                bool actif = bool.Parse(feed.Element("Actif").Value);
+
+                //Create a new feed object
+                Feed newFeed = new Feed(name, link, actif);
+                this.feeds.Add(newFeed);
+            }
+        }
+        catch (Exception e)
+        {
+            Logger.Instance.Log("SubbedFeed : Load => " + e.ToString());
         }
     }
 }
