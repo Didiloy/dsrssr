@@ -61,8 +61,8 @@ namespace dsrssr.controller
             Console.WriteLine("Le bouton refresh  a été cliqué.");
             RssParser rssParser = new RssParser();
             // List<RssArticle> rssArticles =  await rssParser.requestFeed("https://rci.fm/guadeloupe/fb/articles_rss_gp","dummy");
-            // List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.reddit.com/.rss","dummy");
-            List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.gamingonlinux.com/article_rss.php","dummy");
+            List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.reddit.com/.rss","dummy");
+            // List<RssArticle> rssArticles = await rssParser.requestFeed("https://www.gamingonlinux.com/article_rss.php","dummy");
             
             
             //remove all widget in listBox

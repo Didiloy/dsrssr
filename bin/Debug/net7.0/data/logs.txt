@@ -1,0 +1,18 @@
+11/05/2023 17:29:42 : System.Xml.XmlException: 'doctype' is an unexpected token. The expected token is 'DOCTYPE'. Line 1, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ParseDoctypeDecl()
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   at CodeKoenig.SyndicationToolbox.FeedParser.Create(String feedContent)
+   at dsrssr.rss.RssParser.requestFeed(String url, String name) in /home/dylan/Téléchargements/projets/dsrssr/rss/RssParser.cs:line 26
+11/05/2023 17:31:09 : RssParser : requestFeed =>System.Xml.XmlException: 'doctype' is an unexpected token. The expected token is 'DOCTYPE'. Line 1, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ParseDoctypeDecl()
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   at CodeKoenig.SyndicationToolbox.FeedParser.Create(String feedContent)
+   at dsrssr.rss.RssParser.requestFeed(String url, String name) in /home/dylan/Téléchargements/projets/dsrssr/rss/RssParser.cs:line 26
