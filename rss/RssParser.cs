@@ -14,7 +14,7 @@ public class RssParser
         
     }
 
-    public async Task<List<RssArticle>> requestFeed(string url, string name)
+    private async Task<List<RssArticle>> requestFeed(string url, string name)
     {
         List<RssArticle> rssArticles = new List<RssArticle>();
         try
@@ -35,6 +35,21 @@ public class RssParser
             Logger.Instance.Log("RssParser : requestFeed => " +  e.ToString());
         }
 
+        return rssArticles;
+    }
+
+    public async Task<List<RssArticle>> requestFeeds()
+    {
+        List<RssArticle> rssArticles = new List<RssArticle>();
+        var feedsList = SubbedFeed.Instance.Feeds;
+        foreach (Feed feed in feedsList)
+        {
+            List<RssArticle> lr = await requestFeed(feed.Link, feed.Name);
+            rssArticles.AddRange(lr);
+        }
+        //sort the list by date in inverted order
+        rssArticles.Sort((x, y) => DateTime.Compare(y.PubDate, x.PubDate));
+        
         return rssArticles;
     }
   

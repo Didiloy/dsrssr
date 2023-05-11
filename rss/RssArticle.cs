@@ -9,18 +9,27 @@ public class RssArticle
     private string description;
     private string link;
     private string publisher;
-    
-    public RssArticle(string title, string description, string link, string publisher)
+    private DateTime pubDate;
+
+    public DateTime PubDate
+    {
+        get => pubDate;
+    }
+
+    public RssArticle(string title, string description, string link, string publisher, DateTime pubDate)
     {
         this.title = title;
         this.description = description;
         this.link = link;
-        this.publisher = publisher;    
+        this.publisher = publisher;
+        this.pubDate = pubDate;
     }
+
 
     public static RssArticle FromFeedArticle(FeedArticle feedArticle, string name)
     {
-        return new RssArticle(feedArticle.Title, feedArticle.Content, feedArticle.WebUri, name);
+        
+        return new RssArticle(feedArticle.Title, feedArticle.Content, feedArticle.WebUri, name, feedArticle.Published);
     } 
 
     public string GetTitle()

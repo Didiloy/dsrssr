@@ -31,6 +31,11 @@ public sealed class SubbedFeed
     private static readonly string SavePath =
         CurrentPath + path.DirectorySeparatorChar + "data" + path.DirectorySeparatorChar + "feeds.xml";
 
+    public List<Feed> Feeds
+    {
+        get => feeds;
+    }
+
     private SubbedFeed()
     {
         Load();
