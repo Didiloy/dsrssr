@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml.Linq;
 using dsrssr.common;
 using path = System.IO.Path;
@@ -79,6 +80,19 @@ public sealed class SubbedFeed
 
     public void Load()
     {
+        //if the data directory does not exist, create it
+        //Will normaly be created by the Logger Class
+        if (!Directory.Exists(CurrentPath + path.DirectorySeparatorChar + "data"))
+        {
+            try
+            {
+                Directory.CreateDirectory(CurrentPath + path.DirectorySeparatorChar + "data");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
         //if the savePath file doesn't exist, create it 
         if (!System.IO.File.Exists(SavePath))
         {

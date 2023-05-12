@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using dsrssr.rss;
 using Gtk;
 using UI = Gtk.Builder.ObjectAttribute;
@@ -101,6 +102,7 @@ namespace dsrssr.controller
                 listBox.Insert(ac, index);
             }
             progressBar.Fraction = 1.0;
+            await Task.Delay(500);
             progressBar.Hide();
         }
     }

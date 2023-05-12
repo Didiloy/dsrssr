@@ -59,3 +59,33 @@
 12/05/2023 04:58:16 : RssParser : requestFeed => End requests
 12/05/2023 04:58:16 : ==================================================
 12/05/2023 04:58:31 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:01:02 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:01:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:01:06 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:05:10 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:05:12 : ==================================================
+12/05/2023 05:05:12 : RssParser : requestFeed => Start requests
+12/05/2023 05:05:12 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 05:05:13 : Code de réponse: OK
+12/05/2023 05:05:13 : RssParser : requestFeed => End requests
+12/05/2023 05:05:13 : ==================================================
+12/05/2023 05:05:16 : ==================================================
+12/05/2023 05:05:16 : RssParser : requestFeed => Start requests
+12/05/2023 05:05:16 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 05:05:18 : Code de réponse: OK
+12/05/2023 05:05:18 : RssParser : requestFeed => End requests
+12/05/2023 05:05:18 : ==================================================
+12/05/2023 05:05:24 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:05:26 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 05:05:29 : ==================================================
+12/05/2023 05:05:29 : RssParser : requestFeed => Start requests
+12/05/2023 05:05:29 : RssParser : requestFeed => Stéphane Edouard 😀️ : https://rss.app/feeds/tsMzYCu3quF09GWz.xml
+12/05/2023 05:05:30 : Code de réponse: OK
+12/05/2023 05:05:30 : RssParser : requestFeed => End requests
+12/05/2023 05:05:30 : ==================================================
+12/05/2023 05:23:29 : ==================================================
+12/05/2023 05:23:29 : RssParser : requestFeed => Start requests
+12/05/2023 05:23:29 : RssParser : requestFeed => Stéphane Edouard 😀️ : https://rss.app/feeds/tsMzYCu3quF09GWz.xml
+12/05/2023 05:23:30 : Code de réponse: OK
+12/05/2023 05:23:31 : RssParser : requestFeed => End requests
+12/05/2023 05:23:31 : ==================================================
