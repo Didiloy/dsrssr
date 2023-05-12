@@ -25,7 +25,6 @@ public class SingleFeed : Box
 
     private void OnRealized(object sender, EventArgs e)
     {
-        Console.WriteLine(switchButton);
         nameLabel.Text = feed.Name;
         deleteButton.Clicked += SetDeleteAction;
         switchButton.Active = feed.Actif;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 using Cairo;
 using dsrssr.rss;
@@ -9,12 +10,15 @@ using UI = Gtk.Builder.ObjectAttribute;
 
 namespace dsrssr.controller
 {
-    class MainWindow : Window
+    public class MainWindow : Window
     {
         [UI] private Button addNewFeedButton = null;
         [UI] private Button modifyFeedButton = null;
         [UI] private Button refreshButton = null;
         [UI] private ListBox listBox = null;
+        [UI] private ProgressBar progressBar = null;
+        [UI] private Label articlesNumberLabel = null;
+        
         public MainWindow() : this(new Builder("MainWindow.glade")) { }
 
         private MainWindow(Builder builder) : base(builder.GetRawOwnedObject("MainWindow"))
@@ -24,13 +28,13 @@ namespace dsrssr.controller
             Realized += OnRealized;
             addNewFeedButton.Clicked += addNewFeed_Clicked;
             modifyFeedButton.Clicked += modifyFeed_Clicked;
-            refreshButton.Clicked += refresh_Clicked;
+            refreshButton.Clicked += refresh_Clicked_thread;
             
         }
 
         private void OnRealized(object sender, EventArgs e)
         {
-            refresh_Clicked(sender, e);
+            refresh_Clicked_thread(sender, e);
         }
 
         private void Window_DeleteEvent(object sender, DeleteEventArgs a)
@@ -50,10 +54,16 @@ namespace dsrssr.controller
             win.Show();
         }
         
-        private async void refresh_Clicked(object sender, EventArgs a)
+
+        private async void refresh_Clicked_thread(object sender, EventArgs a)
         {
+            progressBar.Fraction = 0;
+            progressBar.Show();
+            progressBar.Fraction = 0.05;
             RssParser rssParser = new RssParser();
-            List<RssArticle> rssArticles = await rssParser.requestFeeds();
+
+            List<RssArticle> rssArticles = await rssParser.requestFeeds(progressBar);
+            articlesNumberLabel.Text = rssArticles.Count + " articles";
 
             //remove all widget in listBox
             foreach (Widget widget in listBox.Children)
@@ -81,6 +91,8 @@ namespace dsrssr.controller
                 ac.Vexpand = true;
                 listBox.Insert(ac, index);
             }
+            progressBar.Fraction = 1.0;
+            progressBar.Hide();
         }
     }
 }

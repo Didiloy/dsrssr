@@ -31,7 +31,6 @@ public class AddRssFeed : Window
     
     private void buttonSave_Clicked(object sender, EventArgs a)
     {
-        Console.WriteLine("Le bouton save un nouveau feed a été clické.");
         if (nameEntry.Text == "" || linkEntry.Text == "")
         {
             errorLabel.Text = "Veuillez remplir tous les champs.";
