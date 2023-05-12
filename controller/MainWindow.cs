@@ -69,6 +69,7 @@ namespace dsrssr.controller
                 ac.SetDescription("Ajoutez ou activez-en un !");
                 ac.SetSourceName("");
                 listBox.Insert(ac, 0);
+                progressBar.Hide();
                 return;
             }
             progressBar.Show();
