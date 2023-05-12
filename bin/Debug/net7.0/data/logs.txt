@@ -1,75 +1,61 @@
-11/05/2023 18:31:19 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 21:05:23 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 21:05:34 : RssParser : requestFeed => System.Xml.XmlException: '/' is an unexpected token. The expected token is '='. Line 10, position 89.
-   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
-   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
-   at System.Xml.XmlTextReaderImpl.ParseAttributes()
-   at System.Xml.XmlTextReaderImpl.ParseElement()
-   at System.Xml.XmlTextReaderImpl.ParseElementContent()
-   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
-   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
-   at System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
-   at CodeKoenig.SyndicationToolbox.FeedParser.Create(String feedContent)
-   at dsrssr.rss.RssParser.requestFeed(String url, String name) in /home/dylan/Téléchargements/projets/dsrssr/rss/RssParser.cs:line 26
-11/05/2023 21:06:33 : RssParser : requestFeed => System.Xml.XmlException: '/' is an unexpected token. The expected token is '='. Line 10, position 89.
-   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
-   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
-   at System.Xml.XmlTextReaderImpl.ParseAttributes()
-   at System.Xml.XmlTextReaderImpl.ParseElement()
-   at System.Xml.XmlTextReaderImpl.ParseElementContent()
-   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
-   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
-   at System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
-   at CodeKoenig.SyndicationToolbox.FeedParser.Create(String feedContent)
-   at dsrssr.rss.RssParser.requestFeed(String url, String name) in /home/dylan/Téléchargements/projets/dsrssr/rss/RssParser.cs:line 26
-11/05/2023 21:57:44 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 21:59:20 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:11:49 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:41:52 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:06 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:06 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:16 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:18 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:37 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:43:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:37 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:38 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:56 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:57 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-11/05/2023 22:52:58 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:43:50 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:43:51 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:43:51 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:43:52 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:44:20 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:44:23 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 03:44:23 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:08:33 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:11:56 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:02 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:03 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:03 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:03 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:04 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:12:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:14:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:20:16 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:20:26 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:24:52 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:24:53 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:24:55 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:25:15 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:25:39 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:25:40 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:25:44 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:30:07 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:30:10 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:30:11 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:30:12 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
-12/05/2023 04:30:13 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:48:13 : ==================================================
+12/05/2023 04:48:13 : RssParser : requestFeed => Start requests
+12/05/2023 04:48:13 : RssParser : requestFeed => RCI : https://rci.fm/guadeloupe/fb/articles_rss_gp
+12/05/2023 04:48:15 : Code de réponse: OK
+12/05/2023 04:48:15 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 04:48:16 : Code de réponse: OK
+12/05/2023 04:48:16 : RssParser : requestFeed => France TV Info : https://www.francetvinfo.fr/titres.rss
+12/05/2023 04:48:17 : Code de réponse: OK
+12/05/2023 04:48:17 : RssParser : requestFeed => France-Antilles - Internationnal : https://www.guadeloupe.franceantilles.fr/actualite/international/rss.xml
+12/05/2023 04:48:19 : Code de réponse: OK
+12/05/2023 04:48:19 : RssParser : requestFeed => France-Antilles - France : https://www.guadeloupe.franceantilles.fr/actualite/france/rss.xml
+12/05/2023 04:48:20 : Code de réponse: OK
+12/05/2023 04:48:20 : RssParser : requestFeed => Test ana de armas : https://rss.app/feeds/trqD7LU2UHONuymF.xml
+12/05/2023 04:48:21 : Code de réponse: OK
+12/05/2023 04:48:21 : RssParser : requestFeed => Stéphane Edouard 😀️ : https://rss.app/feeds/tsMzYCu3quF09GWz.xml
+12/05/2023 04:48:22 : Code de réponse: OK
+12/05/2023 04:48:22 : RssParser : requestFeed => Cuisine AZ : https://rss.app/feeds/HNYeMhuAIav9c2i2.xml
+12/05/2023 04:48:23 : Code de réponse: OK
+12/05/2023 04:48:23 : RssParser : requestFeed => End requests
+12/05/2023 04:48:23 : ==================================================
+12/05/2023 04:55:04 : ==================================================
+12/05/2023 04:55:04 : RssParser : requestFeed => Start requests
+12/05/2023 04:55:04 : RssParser : requestFeed => RCI : https://rci.fm/guadeloupe/fb/articles_rss_gp
+12/05/2023 04:55:04 : Code de réponse: OK
+12/05/2023 04:55:05 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 04:56:03 : ==================================================
+12/05/2023 04:56:03 : RssParser : requestFeed => Start requests
+12/05/2023 04:56:03 : RssParser : requestFeed => RCI : https://rci.fm/guadeloupe/fb/articles_rss_gp
+12/05/2023 04:56:04 : Code de réponse: OK
+12/05/2023 04:56:04 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 04:56:06 : Code de réponse: OK
+12/05/2023 04:56:06 : RssParser : requestFeed => France TV Info : https://www.francetvinfo.fr/titres.rss
+12/05/2023 04:56:07 : Code de réponse: OK
+12/05/2023 04:56:07 : RssParser : requestFeed => France-Antilles - Internationnal : https://www.guadeloupe.franceantilles.fr/actualite/international/rss.xml
+12/05/2023 04:56:08 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:08 : Code de réponse: OK
+12/05/2023 04:56:08 : RssParser : requestFeed => France-Antilles - France : https://www.guadeloupe.franceantilles.fr/actualite/france/rss.xml
+12/05/2023 04:56:09 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:10 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:10 : Code de réponse: OK
+12/05/2023 04:56:10 : RssParser : requestFeed => Test ana de armas : https://rss.app/feeds/trqD7LU2UHONuymF.xml
+12/05/2023 04:56:11 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:12 : Code de réponse: OK
+12/05/2023 04:56:12 : RssParser : requestFeed => Stéphane Edouard 😀️ : https://rss.app/feeds/tsMzYCu3quF09GWz.xml
+12/05/2023 04:56:13 : Code de réponse: OK
+12/05/2023 04:56:13 : RssParser : requestFeed => Cuisine AZ : https://rss.app/feeds/HNYeMhuAIav9c2i2.xml
+12/05/2023 04:56:13 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:13 : Code de réponse: OK
+12/05/2023 04:56:14 : RssParser : requestFeed => End requests
+12/05/2023 04:56:14 : ==================================================
+12/05/2023 04:56:15 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:15 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:56:16 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:58:13 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 04:58:15 : ==================================================
+12/05/2023 04:58:15 : RssParser : requestFeed => Start requests
+12/05/2023 04:58:15 : RssParser : requestFeed => Cuisine AZ : https://rss.app/feeds/HNYeMhuAIav9c2i2.xml
+12/05/2023 04:58:16 : Code de réponse: OK
+12/05/2023 04:58:16 : RssParser : requestFeed => End requests
+12/05/2023 04:58:16 : ==================================================
+12/05/2023 04:58:31 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml

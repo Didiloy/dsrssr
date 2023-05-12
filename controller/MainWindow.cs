@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Threading;
-using System.Threading.Tasks;
-using Cairo;
+using System.Linq;
 using dsrssr.rss;
 using Gtk;
 using UI = Gtk.Builder.ObjectAttribute;
@@ -58,6 +56,21 @@ namespace dsrssr.controller
         private async void refresh_Clicked_thread(object sender, EventArgs a)
         {
             progressBar.Fraction = 0;
+            //remove all widget in listBox
+            foreach (Widget widget in listBox.Children)
+            {
+                listBox.Remove(widget);
+            }
+            
+            if (SubbedFeed.Instance.Feeds.Count(sf => sf.Actif) == 0)
+            {
+                ArticleCard ac = new ArticleCard();
+                ac.SetArticleTitle("Vous n'avez aucun flux RSS pour le moment");
+                ac.SetDescription("Ajoutez ou activez-en un !");
+                ac.SetSourceName("");
+                listBox.Insert(ac, 0);
+                return;
+            }
             progressBar.Show();
             progressBar.Fraction = 0.05;
             RssParser rssParser = new RssParser();
@@ -65,11 +78,6 @@ namespace dsrssr.controller
             List<RssArticle> rssArticles = await rssParser.requestFeeds(progressBar);
             articlesNumberLabel.Text = rssArticles.Count + " articles";
 
-            //remove all widget in listBox
-            foreach (Widget widget in listBox.Children)
-            {
-                listBox.Remove(widget);
-            }
 
             for (var index = 0; index < rssArticles.Count; index++)
             {

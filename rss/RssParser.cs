@@ -21,9 +21,10 @@ public class RssParser
         List<RssArticle> rssArticles = new List<RssArticle>();
         try
         {
+            Logger.Instance.Log("RssParser : requestFeed => " + name + " : " + url + "");
             HttpClient client = new HttpClient();
             using HttpResponseMessage response = await client.GetAsync(url);
-            Console.WriteLine("Code de réponse: " + response.StatusCode);
+            Logger.Instance.Log("Code de réponse: " + response.StatusCode);
             string rssString = await response.Content.ReadAsStringAsync();
             FeedParser feedParser = FeedParser.Create(rssString);
             CodeKoenig.SyndicationToolbox.Feed feed = feedParser.Parse();
@@ -45,12 +46,16 @@ public class RssParser
         List<RssArticle> rssArticles = new List<RssArticle>();
         var feedsList = SubbedFeed.Instance.Feeds;
         var count = feedsList.Count(feed => feed.Actif);
+        Logger.Instance.Log("==================================================");
+        Logger.Instance.Log("RssParser : requestFeed => Start requests");
         foreach (var feed in feedsList.Where(feed => feed.Actif))
         {
             List<RssArticle> lr = await requestFeed(feed.Link, feed.Name);
             rssArticles.AddRange(lr);
             pb.Fraction += 1.0 / count;
         }
+        Logger.Instance.Log("RssParser : requestFeed => End requests");
+        Logger.Instance.Log("==================================================");
 
         //sort the list by date in inverted order
         rssArticles.Sort((x, y) => DateTime.Compare(y.PubDate, x.PubDate));
