@@ -4,7 +4,7 @@
   <Feed>
     <Name>RCI</Name>
     <Link>https://rci.fm/guadeloupe/fb/articles_rss_gp</Link>
-    <Actif>false</Actif>
+    <Actif>true</Actif>
   </Feed>
   <Feed>
     <Name>Gaming On Linux</Name>
@@ -14,7 +14,7 @@
   <Feed>
     <Name>France TV Info</Name>
     <Link>https://www.francetvinfo.fr/titres.rss</Link>
-    <Actif>false</Actif>
+    <Actif>true</Actif>
   </Feed>
   <Feed>
     <Name>France-Antilles - Internationnal</Name>
@@ -24,7 +24,7 @@
   <Feed>
     <Name>France-Antilles - France</Name>
     <Link>https://www.guadeloupe.franceantilles.fr/actualite/france/rss.xml</Link>
-    <Actif>false</Actif>
+    <Actif>true</Actif>
   </Feed>
   <Feed>
     <Name>Test ana de armas</Name>
@@ -34,7 +34,7 @@
   <Feed>
     <Name>Stéphane Edouard 😀️</Name>
     <Link>https://rss.app/feeds/tsMzYCu3quF09GWz.xml</Link>
-    <Actif>true</Actif>
+    <Actif>false</Actif>
   </Feed>
   <Feed>
     <Name>Cuisine AZ</Name>

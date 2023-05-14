@@ -27,10 +27,12 @@ public sealed class SubbedFeed
     }
 
     private List<Feed> feeds = new List<Feed>();
-    private static readonly string CurrentPath = System.IO.Directory.GetCurrentDirectory();
-
-    private static readonly string SavePath =
-        CurrentPath + path.DirectorySeparatorChar + "data" + path.DirectorySeparatorChar + "feeds.xml";
+    private static readonly string LocalPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+    private static readonly string ApplicationPath = LocalPath + path.DirectorySeparatorChar + "dsrssr";
+    private static readonly string SavePath = ApplicationPath +
+                                              path.DirectorySeparatorChar + "data" + 
+                                              path.DirectorySeparatorChar + "feeds.xml";
+    
 
     public List<Feed> Feeds
     {
@@ -82,11 +84,11 @@ public sealed class SubbedFeed
     {
         //if the data directory does not exist, create it
         //Will normaly be created by the Logger Class
-        if (!Directory.Exists(CurrentPath + path.DirectorySeparatorChar + "data"))
+        if (!Directory.Exists(ApplicationPath + path.DirectorySeparatorChar + "data"))
         {
             try
             {
-                Directory.CreateDirectory(CurrentPath + path.DirectorySeparatorChar + "data");
+                Directory.CreateDirectory(ApplicationPath + path.DirectorySeparatorChar + "data");
             }
             catch (Exception e)
             {

@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Gtk;
 using dsrssr.controller;
 using path = System.IO.Path;
@@ -7,9 +8,34 @@ namespace dsrssr
 {
     class Program
     {
-        [STAThread]
+
+        private static readonly string LocalPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+        private static readonly string ApplicationPath = LocalPath + path.DirectorySeparatorChar + "dsrssr";
+
+        private static readonly string DataPath = LocalPath +
+                                                  path.DirectorySeparatorChar + "dsrssr" +
+                                                  path.DirectorySeparatorChar + "data";
+        
+
+                                                      [STAThread]
         public static void Main(string[] args)
         {
+            //if the application directory does not exist, create it
+            if (!Directory.Exists(ApplicationPath))
+            {
+                try
+                {
+                    Console.WriteLine(ApplicationPath);
+                    Directory.CreateDirectory(ApplicationPath);
+                    Directory.CreateDirectory(DataPath);
+                    
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
             Application.Init();
             //get current path
             var currentPath = System.IO.Directory.GetCurrentDirectory();

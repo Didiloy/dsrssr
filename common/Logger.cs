@@ -19,22 +19,17 @@ public class Logger
             return instance;
         }
     }
-    private static readonly string CurrentPath = Directory.GetCurrentDirectory();
-    private static readonly string SavePath = CurrentPath + path.DirectorySeparatorChar + "data" + path.DirectorySeparatorChar + "logs.txt";
+    //get the os of the user
+    private static readonly string OS = Environment.OSVersion.Platform.ToString();
+    private static readonly string LocalPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+    private static readonly string SavePath = LocalPath + 
+                                              path.DirectorySeparatorChar + "dsrssr" + 
+                                              path.DirectorySeparatorChar + "data" + 
+                                              path.DirectorySeparatorChar + "logs.txt";
+    
+    
     private Logger()
     {
-        //if the data directory does not exist, create it
-        if (!Directory.Exists(CurrentPath + path.DirectorySeparatorChar + "data"))
-        {
-            try
-            {
-                Directory.CreateDirectory(CurrentPath + path.DirectorySeparatorChar + "data");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
         //if savePath does not exist, create it
         if (!File.Exists(SavePath))
         {

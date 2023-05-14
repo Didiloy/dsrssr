@@ -89,3 +89,41 @@
 12/05/2023 05:23:30 : Code de réponse: OK
 12/05/2023 05:23:31 : RssParser : requestFeed => End requests
 12/05/2023 05:23:31 : ==================================================
+12/05/2023 14:35:49 : ==================================================
+12/05/2023 14:35:49 : RssParser : requestFeed => Start requests
+12/05/2023 14:35:49 : RssParser : requestFeed => Stéphane Edouard 😀️ : https://rss.app/feeds/tsMzYCu3quF09GWz.xml
+12/05/2023 14:35:51 : Code de réponse: OK
+12/05/2023 14:35:51 : RssParser : requestFeed => End requests
+12/05/2023 14:35:51 : ==================================================
+12/05/2023 14:35:56 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:35:58 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:35:59 : ==================================================
+12/05/2023 14:35:59 : RssParser : requestFeed => Start requests
+12/05/2023 14:35:59 : RssParser : requestFeed => Cuisine AZ : https://rss.app/feeds/HNYeMhuAIav9c2i2.xml
+12/05/2023 14:36:00 : Code de réponse: OK
+12/05/2023 14:36:00 : RssParser : requestFeed => End requests
+12/05/2023 14:36:00 : ==================================================
+12/05/2023 14:36:12 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:36:13 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:36:19 : ==================================================
+12/05/2023 14:36:19 : RssParser : requestFeed => Start requests
+12/05/2023 14:36:19 : RssParser : requestFeed => Gaming On Linux : https://www.gamingonlinux.com/article_rss.php
+12/05/2023 14:36:21 : Code de réponse: OK
+12/05/2023 14:36:21 : RssParser : requestFeed => End requests
+12/05/2023 14:36:21 : ==================================================
+12/05/2023 14:38:01 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:02 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:03 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:05 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:06 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:06 : SubbedFeed : SerializeAndSave => Saved to /home/dylan/Téléchargements/projets/dsrssr/bin/Debug/net7.0/data/feeds.xml
+12/05/2023 14:38:08 : ==================================================
+12/05/2023 14:38:08 : RssParser : requestFeed => Start requests
+12/05/2023 14:38:08 : RssParser : requestFeed => RCI : https://rci.fm/guadeloupe/fb/articles_rss_gp
+12/05/2023 14:38:10 : Code de réponse: OK
+12/05/2023 14:38:10 : RssParser : requestFeed => France TV Info : https://www.francetvinfo.fr/titres.rss
+12/05/2023 14:38:11 : Code de réponse: OK
+12/05/2023 14:38:11 : RssParser : requestFeed => France-Antilles - France : https://www.guadeloupe.franceantilles.fr/actualite/france/rss.xml
+12/05/2023 14:38:13 : Code de réponse: OK
+12/05/2023 14:38:13 : RssParser : requestFeed => End requests
+12/05/2023 14:38:13 : ==================================================
