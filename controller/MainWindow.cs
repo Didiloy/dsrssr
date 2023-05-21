@@ -49,7 +49,7 @@ namespace dsrssr.controller
         
         private void modifyFeed_Clicked(object sender, EventArgs a)
         {
-            var win = new ListAllFeeds();
+            var win = new ListAllFeeds(this);
             win.Show();
         }
         
@@ -104,6 +104,11 @@ namespace dsrssr.controller
             progressBar.Fraction = 1.0;
             await Task.Delay(500);
             progressBar.Hide();
+        }
+        
+        public void refreshRssArticles()
+        {
+            refresh_Clicked_thread(null, null);
         }
     }
 }
