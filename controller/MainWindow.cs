@@ -43,7 +43,7 @@ namespace dsrssr.controller
 
         private void addNewFeed_Clicked(object sender, EventArgs a)
         {
-            var win = new AddRssFeed();
+            var win = new AddRssFeed(this);
             win.Show();
         }
         
@@ -69,8 +69,10 @@ namespace dsrssr.controller
                 ac.SetArticleTitle("Vous n'avez aucun flux RSS pour le moment");
                 ac.SetDescription("Ajoutez ou activez-en un !");
                 ac.SetSourceName("");
+                ac.DisableSeeArticleDetailAction();
                 listBox.Insert(ac, 0);
                 progressBar.Hide();
+                articlesNumberLabel.Text = "0 article";
                 return;
             }
             progressBar.Show();

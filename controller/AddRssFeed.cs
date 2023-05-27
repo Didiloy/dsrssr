@@ -13,11 +13,13 @@ public class AddRssFeed : Window
     [UI] private Entry nameEntry = null;
     [UI] private Entry linkEntry = null;
     [UI] private Label errorLabel = null;
+    private MainWindow mainWindow;
     
-    public AddRssFeed() : this(new Builder("AddRssFeed.glade")) { }
+    public AddRssFeed(MainWindow w) : this(new Builder("AddRssFeed.glade"), w) { }
 
-    private AddRssFeed(Builder builder) : base(builder.GetRawOwnedObject("addRssFeed"))
+    private AddRssFeed(Builder builder, MainWindow w) : base(builder.GetRawOwnedObject("addRssFeed"))
     {
+        mainWindow = w;
         builder.Autoconnect(this);
         DeleteEvent += Window_DeleteEvent;
         buttonSave.Clicked += buttonSave_Clicked;
@@ -38,6 +40,7 @@ public class AddRssFeed : Window
         }
         Feed feed = new Feed(nameEntry.Text, linkEntry.Text, true);
         SubbedFeed.Instance.addNewFeed(feed);
+        this.mainWindow.refreshRssArticles();
         Destroy();
     }
 }

@@ -39,5 +39,10 @@ namespace dsrssr.controller
         {
             seeArticleDetail.Clicked += action;
         }
+        
+        public void DisableSeeArticleDetailAction()
+        {
+            seeArticleDetail.Visible = false;
+        }
     }
 }
